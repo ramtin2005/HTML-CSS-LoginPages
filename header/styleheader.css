@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+}
+
+.header {
+    width: 100vw;
+    height: 75px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    box-shadow: 0px 1px 13px 2px #00000024;
+}
+
+.pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.info {
+    width: fit-content;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    flex-wrap: nowrap;
+}
+
+.name {
+    color: rgb(177 177 177);
+    font-size: small;
+    text-wrap: nowrap;
+}
+
+.number {
+    color: rgb(177 177 177);
+    font-size: x-small;
+}
+
+.space {
+    width: 100%;
+}
+
+.sidebar {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnmenu,
+.close {
+    width: 20px;
+    height: 20px;
+    padding: 1px;
+    background-color: transparent;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style:none ;
+}
+
+.openmenu {
+    width: 200px;
+    height: 100vh;
+    background-color: rgb(54, 54, 52);
+    position: absolute;
+    top: 0;
+    right: -200px;
+    transition: right 2s;
+}
+
+.show {
+    right: 0;
+}
+
+.close,
+.btnmenu {
+    background-color: transparent;
+}
+
+.iconmenu{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.line {
+    width: 13px;
+    height: 3px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: gray;
+}
+
+
+
+@media (max-width:500px) {
+
+    .header {
+        width: 100vw;
+        height: 100px;
+    }
+
+    .pic {
+        width: 30px;
+        height: 30px;
+    }
+
+    .name {
+        font-size: small;
+    }
+
+    .number {
+        font-size: x-small;
+    }
+
+}
